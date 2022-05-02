@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&family=Poppins:wght@200&family=Roboto:ital,wght@0,100;0,300;0,900;1,100;1,400;1,500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/style.css" type="text/css">
+    <title>Spotfy</title>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <div class="sidebar-wraper">
+            <div class="sidebar-logo">
+                <img src="./assets/images/spotify-logo.svg">
+            </div>
+            <div class="sidebar-menu">
+                <a class="home menu-selecionado" href="index.html"><i class="fas fa-home"></i>Inicio</a>
+                <a href=""><i class="fas fa-search"></i>Buscar</a>
+                <a href=""><i class="fas fa-database"></i>Biblioteca</a>
+            </div>
+
+
+            <div class="sidebar-menu">
+                <p class="sidebar-menu-title">Playlists</p>
+
+                <div class="sidebar-menu-item">
+                    <div class="menu-item">+</div>
+                    <span>Criar playlist</span>
+                </div>
+
+                <div class="sidebar-menu-item">
+                    <img src="./assets/images/icone-de-coeur-rouge-1.png">
+                    <span>Musicas Curtidas</span>
+                </div>
+
+            </div>
+
+            <div class="sidebar-playlists">
+                <a class="playlist1 " href="">Beijo Estranho</a>
+                <a href="">Playlist 2</a>
+                <a href="">Playlist 3</a>
+                <a href="">Playlist 4</a>
+                <a href="">Playlist 5</a>
+            </div>
+            
+        </div>
+    </div>
+
+    <main>
+        <div class="main">
+            <div class="main-wraper">
+                <div class="main-row">
+                    <div class="main-row-title">
+                        <h2>Minhas musicas</h2>
+                    </div>
+
+                    <!--
+                        <div class="main-col" data-image="./assets/images/sente.jpg" data-artist="Vanguart"
+                            data-song="Sente" data-file="./assets/musicas/VanguartSente.mp3">
+                            <img src="./assets/images/sente.jpg">
+                            <h3>As 50 mais tocadas</h3>
+                            <p>Descrição</p>
+                        </div>
+                    -->
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="player">
+        <div class="player-artist">
+            
+                <audio id='audio' src=""></audio>
+                <img id="img" src="" alt="music album">
+                <div>
+                    
+                    <h1 id="musicName"></h1>
+                    <h2 id="artist"></h2>
+                </div> 
+        </div>
+
+        <div class="player-control">
+            <div class="btns">
+                <img class="icones voltar" src="./assets/images/prev-branco.png">
+                <img class="icone btnMenos10s" src="./assets/images/-10sMaior.png">
+                <img class="icone-playPause btnPlay" src="./assets/images/play-preto.png">
+                <img class="icone-playPause btnPause display" src="./assets/images/pause-preto.png">
+                <img class="icone btnMais10s" src="./assets/images/+10sMaior.png">
+                <img class="icones proxima" src="./assets/images/next-branco.png">
+            </div>
+            <div class="player-control-progress">
+                <progress value="0" max="1"></progress>
+            </div>
+            <div class="tempo">
+                <p class="inicio">0:00</p>
+                <p class="fim">0:00</p>
+            </div>
+        </div>
+    </div>
+   
+
+    
+
+    <script src="./scripts/all.min.js"></script>
+    <script src="./scripts/listaMusicas.js"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
